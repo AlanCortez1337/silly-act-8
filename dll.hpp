@@ -1,6 +1,7 @@
 #ifndef DLL_HPP
 #define DLL_HPP
 #include "node.hpp"
+#include <memory>
 
 template <typename T>
 class DLL {
@@ -8,56 +9,36 @@ class DLL {
         // Constructor
         DLL() : head_(nullptr), tail_(nullptr) {}
 
-        void push_front(T newHead);
+        // Insert member functions
+        void push_front(T value);
 
-        // ⭐TODO: Using your knowledge from the activity and the add function, finish the function below to remove the first element of the SLL
-        void pop_front()
-        {
-            
-        }
+        void push_back(T value);
 
-        // ⭐TODO: Using your knowledge from the activity and the add function, finish the function below to remove the first element of the SLL
-        void pop_back()
-        {
-            
-        }
+        void insert(T value, T target);
 
-        // ⭐TODO: Loop through the entire SLL and add the element to the back of the SLL
-        void push_back(T value)
-        {
-            
-        }
+        // Delete member functions
+        void pop_front();
 
-        // ⭐TODO: Loop through the entire SLL and display each value
-        // ➕ADDITIONALLY: print what is the head SLL in a new line and the size of the elements in a new line
-        void display()
-        {
-            
-        }
+        void pop_back();
 
-        // ⭐TODO: Finish the function below so that it inserts the value before the target location
-        void insert(T value, T index)
-        {
-            
-        }
+        void deleteValue(T value);
 
-        // ⭐TODO: Finish the function below so that it inserts the value before the target location
-        void deleteValue(T value)
-        {
-            
-        }
+        void display();
 
-        std::shared_ptr<Node<T>> get(T value) {
-
-        }
-
-        void set(T value, T target) {
-
-        }
+        void reverse();
 
     private:
         std::shared_ptr<Node<T>> head_;
         std::shared_ptr<Node<T>> tail_;
 };
+
+#include "./methods/insert/push_front.tpp"
+#include "./methods/insert/push_back.tpp"
+#include "./methods/insert/insert.tpp"
+#include "./methods/delete/pop_front.tpp"
+#include "./methods/delete/pop_back.tpp"
+#include "./methods/delete/delete.tpp"
+#include "./methods/misc/display.tpp"
+#include "./methods/misc/reverse.tpp"
 
 #endif // DLL_HPP
