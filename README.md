@@ -1,6 +1,7 @@
 # Silly SI Activity 8
 This is practice for CPSC 131 data structures which helps students practice implementing and interacting with pointers to build Doubly Linked Lists!
 
+
 ## On your own local device...
 1. **Fork** this repository
 2. Click on the green code button
