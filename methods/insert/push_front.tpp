@@ -9,14 +9,12 @@ void DLL<T>::push_front(T value) {
         std::shared_ptr<Node<T>> front_node = std::make_shared <Node<T>> (value);
 
         if (head_ == nullptr) {
-          head_->next_ = front_node;
-          front_node->next_ = nullptr;
-          front_node->prev_ = nullptr;
+          head_ = front_node;
+          tail_ = front_node;
         } else {
           head_->prev_ = front_node;
           front_node->next_ = head_;
           head_ = front_node;
-          front_node->prev_ = nullptr;
         }
   return;
 }
