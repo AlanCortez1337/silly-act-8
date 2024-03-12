@@ -1,18 +1,29 @@
 <script>
-  let greeting = '';
+  let prefix = '';
+  let postfix = '';
 
-  async function fetchGreeting() {
-    const response = await fetch('http://localhost:8080/api/calculate');
+  async function fetchPrefix() {
+    const response = await fetch('http://localhost:8080/api/calcpre');
     const data = await response.json();
-    greeting = data.message;
+    prefix = data.message;
+  }
+
+  async function fetchPostfix() {
+    const response = await fetch('http://localhost:8080/api/calcpost');
+    const data = await response.json();
+    postfix = data.message;
   }
 </script>
 
 <main>
   <div class="container">
-    <h1>Calculate!</h1>
-    <button class="btn" on:click={fetchGreeting}>Get Calculation</button>
-    <p class="greeting">{greeting}</p>
+    <h1>Prefix Calculate!</h1>
+    <p><i>Calculate: "*/+5292"</i></p>
+    <button class="btn" on:click={fetchPrefix}>Get Prefix</button>
+    <p class="greeting">{prefix}</p>
+    <p><i>Calculate: "9241++-"</i></p>
+    <button class="btn" on:click={fetchPostfix}>Get Prefix</button>
+    <p class="greeting">{postfix}</p>
   </div>
 </main>
 
