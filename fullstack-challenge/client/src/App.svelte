@@ -3,13 +3,13 @@
   let postfix = '';
 
   async function fetchPrefix() {
-    const response = await fetch('http://localhost:8080/api/calcpre');
+    const response = await fetch('https://probable-space-cod-rxpv54jx6gv3wwxw-8080.app.github.dev/api/calcpre');
     const data = await response.json();
     prefix = data.message;
   }
 
   async function fetchPostfix() {
-    const response = await fetch('http://localhost:8080/api/calcpost');
+    const response = await fetch('https://probable-space-cod-rxpv54jx6gv3wwxw-8080.app.github.dev/api/calcpost');
     const data = await response.json();
     postfix = data.message;
   }
