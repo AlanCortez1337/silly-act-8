@@ -24,6 +24,8 @@ class DLL {
         void deleteValue(T value);
 
         // Misc member functions
+        // T get_head() // return head_ value
+
         void display();
 
         void reverse();
