@@ -1,6 +1,6 @@
 #ifndef QUEUE_HPP
 #define QUEUE_HPP
-#include "dll.hpp"
+#include "../dll/dll.hpp"
 
 template <typename T>
 class Queue

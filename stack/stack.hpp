@@ -1,6 +1,6 @@
 #ifndef STACK_HPP
 #define STACK_HPP
-#include "dll.hpp"
+#include "../dll/dll.hpp"
 
 template <typename T>
 class Stack

@@ -1,5 +1,5 @@
-#include "dll.hpp"
-#include "stack.hpp"
+#include "./dll/dll.hpp"
+#include "./stack/stack.hpp"
 
 int main() {
 
