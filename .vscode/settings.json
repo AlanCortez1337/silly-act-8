@@ -56,5 +56,6 @@
         "queue.hpp": "c",
         "dll.hpp": "c"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "cmake.sourceDirectory": "/workspaces/silly-act-8/fullstack-challenge/server/Crow/tests/template"
 }
