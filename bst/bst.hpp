@@ -15,17 +15,20 @@ class BST {
 
         // Delete member functions
 
-        void predecessorDelete(T value);
-
-        void successorDelete(T value);
+        void remove(T value);
 
         // Misc member functions
 
         std::shared_ptr<Node<T>> find(T target);
+        std::shared_ptr<Node<T>> findPredecessor(Node<T> node);
+        std::shared_ptr<Node<T>> findSuccessor(Node<T> node);
 
         void inorderPrint();
 
     private:
+        std::shared_ptr<Node<T>> find(std::shared_ptr<Node<T>> curr, T target);
+        void insert(std::shared_ptr<Node<T>> curr, T value);
+`
         std::shared_ptr<Node<T>> root_;
 };
 
