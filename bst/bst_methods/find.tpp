@@ -5,12 +5,27 @@
 
 template <typename T>
 std::shared_ptr<Node<T>> BST<T>::find(std::shared_ptr<Node<T>> curr, T target) {
-    // ⭐TODO: Finish Function
+  if (!curr->next){
+    return curr;
+  }
+
+  if (curr->val > target) {
+    if (curr->left == nullptr) {
+        return BST<T>::find(curr, target);
+    } 
+    BST<T>::find(curr->left, target);
+    } 
+  else if (curr->val < target) {
+    if (curr->right == nullptr) {
+        return BST<T>::find(curr, target);
+    }
+    BST<T>::find(curr->right, target);
+    } 
 }
 
 template <typename T>
 std::shared_ptr<Node<T>> BST<T>::find(T target) {
-    // ⭐TODO: Finish Function
+    
 }
 
 #endif // BST_FIND_TPP
