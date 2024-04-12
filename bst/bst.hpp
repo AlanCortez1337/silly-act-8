@@ -34,8 +34,9 @@ class BST {
 
 #include "./bst_methods/find.tpp"
 #include "./bst_methods/insert.tpp"
-#include "./bst_methods/predecessorDelete.tpp"
-#include "./bst_methods/successorDelete.tpp"
+#include "./bst_methods/remove.tpp"
+#include "./bst_methods/findPredecessor.tpp"
+#include "./bst_methods/findSuccessor.tpp"
 #include "./bst_methods/inorderPrint.tpp"
 
 #endif // BST_HPP
