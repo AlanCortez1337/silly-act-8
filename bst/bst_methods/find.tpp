@@ -25,7 +25,7 @@ std::shared_ptr<Node<T>> BST<T>::find(std::shared_ptr<Node<T>> curr, T target) {
 
 template <typename T>
 std::shared_ptr<Node<T>> BST<T>::find(T target) {
-    
+    return BST<T>::find(root_, target);
 }
 
 #endif // BST_FIND_TPP
