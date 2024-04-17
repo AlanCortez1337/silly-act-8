@@ -7,13 +7,13 @@ template <typename T>
 void DLL<T>::pop_front() {
     // ⭐TODO: remove the first node
     if (head_ == nullptr) {
-        throw "EMPTY"
+        throw "EMPTY";
     } else if (head_->next_ == nullptr) {
         head_ = nullptr;
         tail_ = nullptr;
     } else {
         head_ = head_->next_;
-        head_->prev_ = nullptr
+        head_->prev_ = nullptr;
     }
     return;
 }
