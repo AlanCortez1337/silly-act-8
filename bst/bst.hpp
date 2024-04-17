@@ -1,6 +1,6 @@
 #ifndef BST_HPP
 #define BST_HPP
-#include "node.hpp"
+#include "tree_node.hpp"
 #include <memory>
 
 template <typename T>
@@ -19,17 +19,18 @@ class BST {
 
         // Misc member functions
 
-        std::shared_ptr<Node<T>> find(T target);
-        std::shared_ptr<Node<T>> findPredecessor(Node<T> node);
-        std::shared_ptr<Node<T>> findSuccessor(Node<T> node);
+        std::shared_ptr<TreeNode<T>> find(T target);
+        std::shared_ptr<TreeNode<T>> findPredecessor(TreeNode<T> node);
+        std::shared_ptr<TreeNode<T>> findSuccessor(TreeNode<T> node);
 
         void inorderPrint();
 
     private:
-        std::shared_ptr<Node<T>> find(std::shared_ptr<Node<T>> curr, T target);
-        void insert(std::shared_ptr<Node<T>> curr, T value);
-`
-        std::shared_ptr<Node<T>> root_;
+        std::shared_ptr<TreeNode<T>> find(std::shared_ptr<TreeNode<T>> curr, T target);
+        void insert(std::shared_ptr<TreeNode<T>> curr, T value);
+        void inorderPrint(std::shared_ptr<TreeNode<T>> curr);
+
+        std::shared_ptr<TreeNode<T>> root_;
 };
 
 #include "./bst_methods/find.tpp"

@@ -16,8 +16,8 @@ int main() {
     mytree.inorderPrint();
 
     // Deleting Node
-    mytree.remove(14);
-    mytree.inorderPrint();
+    // mytree.remove(14);
+    // mytree.inorderPrint();
     
 
     return 0;

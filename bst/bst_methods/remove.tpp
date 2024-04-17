@@ -9,7 +9,7 @@ void BST<T>::remove(T value) {
     // 2. find the predecessor if you need 
     // 3. delete the node how you see fit (draw it out!)
 
-    std::shared_ptr<Node<T>> find_node = find(value);
+    std::shared_ptr<TreeNode<T>> find_node = find(value);
 
     //leaf node
     if ((!find_node->left_) && (!find_node->right_)) {
