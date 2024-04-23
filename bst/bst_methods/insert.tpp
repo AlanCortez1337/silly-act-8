@@ -3,7 +3,6 @@
 
 template <typename T>
 void BST<T>::insert(T value) {
-    // ⭐TODO: Using the BST's rules, insert the value into the BST
     std::shared_ptr<TreeNode<T>> find_node = find(value);
     std::shared_ptr<TreeNode<T>> new_node = std::make_shared<TreeNode<T>> (value);
 
@@ -17,6 +16,14 @@ void BST<T>::insert(T value) {
         find_node->left_ = new_node;
         find_node->left_->parent_ = find_node;
     }
+
+    // ‼️BEFORE CONTINUING: 
+
+    // ⭐TODO: Update heights
+
+    // ⭐TODO: Check the Balance Factor
+
+    // ⭐TODO: Use the Balance Factor to determine if you need to perform rotations
 }
 
 #endif // BST_INSERT_TPP
