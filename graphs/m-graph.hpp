@@ -8,6 +8,8 @@ public:
 
     void UpdateEdgeWeight(std::size_t pointA, std::size_t pointB, std::size_t newEdgeWeight);
 
+    bool isAdjacent(std::size_t pointA, std::size_t pointB);
+
     std::size_t GetEdgeWeight(std::size_t pointA, std::size_t pointB);
 
     std::vector<std::size_t> GetAdjacentPoints(std::size_t targetPoint);
@@ -22,5 +24,6 @@ private:
 #include "./m-methods/getEdgeWeight.tpp"
 #include "./m-methods/insertPoint.tpp"
 #include "./m-methods/updateEdgeWeight.tpp"
+#include "./m-methods/isAdjacent.tpp"
 
 #endif // MATRIX_GRAPH_HPP

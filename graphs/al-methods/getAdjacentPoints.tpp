@@ -1,7 +1,7 @@
 #ifndef GET_ADJACENT_POINTS_HPP
 #define GET_ADJACENT_POINTS_HPP
 template <typename T>
-std::vector<std::pair<std::size_t, T>> mGraph<T>::GetAdjacentPoints(std::size_t targetPoint) {
+std::vector<std::pair<std::size_t, T>> alGraph<T>::GetAdjacentPoints(std::size_t targetPoint) {
     // ⭐TODO: return a vector of all the indicies of the adjacent points from the targetPoint.
 }
 

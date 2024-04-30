@@ -9,6 +9,8 @@ public:
 
     void UpdateEdgeWeight(std::size_t pointA, std::size_t pointB, std::size_t newEdgeWeight);
 
+    bool isAdjacent(std::size_t pointA, std::size_t pointB);
+
     std::size_t GetEdgeWeight(std::size_t pointA, std::size_t pointB);
 
     std::vector<std::size_t> GetAdjacentPoints(std::size_t targetPoint);
@@ -23,5 +25,6 @@ private:
 #include "./al-methods/getEdgeWeight.tpp"
 #include "./al-methods/insertPoint.tpp"
 #include "./al-methods/updateEdgeWeight.tpp"
+#include "./al-methods/isAdjacent.tpp"
 
 #endif // ADJACENCY_LIST_GRAPH_HPP

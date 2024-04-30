@@ -77,7 +77,8 @@
         "cinttypes": "cpp",
         "typeindex": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "forward_list": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "cmake.sourceDirectory": "/workspaces/silly-act-8/fullstack-challenge/server/Crow/tests/template"
