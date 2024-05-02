@@ -3,8 +3,14 @@
 template <typename T>
 void mGraph<T>::insertPoint(std::size_t newEdgeWeight)
     {
-        // 🔥CHALLENGE TODO: update the container to add a newPoint
-        // 🧠 Food for thought: think about what happens to the spots in the vector that does have that edge weight.
+        for (int i=0; i < container_.size(); i++) {
+        container_.at(i).pushback(0);
+        }
+        container_.pushback(std::vector<std::size_t> meow(container_.size(), 0));
+        
+        UpdateEdgeWeight(pointA, pointB, newEdgeWeight);
+        
+        return;    
     }
 #endif // INSERT_POINT_HPP
 
