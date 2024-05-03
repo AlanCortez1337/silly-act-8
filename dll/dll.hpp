@@ -23,9 +23,14 @@ class DLL {
 
         void deleteValue(T value);
 
+        // Misc member functions
+        std::shared_ptr<Node<T>> get_head() { return head_; } // return head_ value
+
         void display();
 
         void reverse();
+
+        std::shared_ptr<Node<T>> find(T target);
 
     private:
         std::shared_ptr<Node<T>> head_;

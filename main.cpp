@@ -1,28 +1,24 @@
-#include "dll.hpp"
+#include "./dll/dll.hpp"
+#include "./stack/stack.hpp"
+#include "./bst/bst.hpp"
 
 int main() {
 
-    DLL<int> TuffysTrain {};
+    BST<int> mytree;
 
-    TuffysTrain.push_front(24);
-    TuffysTrain.push_front(1);
-    TuffysTrain.push_front(7);
-    TuffysTrain.push_back(32);
-    TuffysTrain.push_back(400);
-    TuffysTrain.push_back(12);
-    TuffysTrain.insert(3, 2);
+    // Creating Tree
+    mytree.insert(8);
+    mytree.insert(14);
+    mytree.insert(3);
+    mytree.insert(27);
+    mytree.insert(11);
 
-    TuffysTrain.display();
+    mytree.inorderPrint();
 
-    TuffysTrain.pop_front();
-    TuffysTrain.pop_back();
-    TuffysTrain.deleteValue(400);
-
-    TuffysTrain.display();
-
-    TuffysTrain.reverse();
-
-    TuffysTrain.display();
+    // Deleting Node
+    // mytree.remove(14);
+    // mytree.inorderPrint();
+    
 
     return 0;
 }
