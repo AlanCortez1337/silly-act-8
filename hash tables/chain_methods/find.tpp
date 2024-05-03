@@ -11,10 +11,9 @@ T ChainHashTable<T>::find(T value) {
     for (std::pair<int,T> temp : container_.at(index)) {
         if (value == temp.first) {
             second = temp.second;
+            return second;
         }
     }
-
-    return second;
 }
 
 #endif // CHAIN_HASH_TABLE_FIND_TPP
